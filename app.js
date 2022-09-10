@@ -5,7 +5,7 @@ const sequelize = require('./src/db/sequelize')
 const port = process.env.PORT || 3000
 const app = express()
 
-sequelize.initDb()
+// sequelize.initDb()
 
 app.get('/', (req, res) => {
     res.json({ msg: 'Hello Heroku !' })
